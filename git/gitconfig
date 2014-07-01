@@ -1,16 +1,26 @@
 [user]
-    name = Romain Hardy
-      email = romain.hardy17@gmail.com
-[color]
-    diff = auto
-      status = auto
-        branch = auto
+	name = Tim Alby
+	email = timothee.alby@gmail.com
 [alias]
-    st = status
-      ci = commit
-        co = checkout
-          fp = format-patch
-            lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
-
-[merge]
-  tool = opendiff
+	st = status
+	sb = status -sb
+	up = push heroku_staging staging:master
+	up2 = push heroku_staging2 staging2:master
+	co = checkout
+	ci = commit
+	df = diff --staged	
+	ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
+	lsv = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat
+	cp = cherry-pick
+	br = branch 
+	dw = diff --word-diff
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+	ap = add -p
+[credential]
+	helper = osxkeychain
+[push]
+	default = current
+[color]
+	ui = true
