@@ -3,6 +3,7 @@
 	email = timothee.alby@gmail.com
 [alias]
 	st = status
+	stu = status -uno # WARNING: untracked files won't be displayed
 	sb = status -sb
 	up = push heroku_staging staging:master
 	up2 = push heroku_staging2 staging2:master
