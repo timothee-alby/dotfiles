@@ -52,3 +52,5 @@ bindkey -v
 export KEYTIMEOUT=1
 # Keep retro compat with incremental search
 bindkey "^R" history-incremental-search-backward
+bindkey "${terminfo[kcuu1]}" up-line-or-search
+bindkey "${terminfo[kcud1]}" down-line-or-search
