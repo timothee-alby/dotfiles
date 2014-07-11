@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"BracketHighlighter",
 		"Git",
 		"GitGutter",
 		"GotoTab",
@@ -15,8 +16,6 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
-		"SublimeLinter-contrib-scss-lint",
-		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-ruby",
 		"Theme - Nil",
