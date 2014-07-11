@@ -25,3 +25,5 @@
 	default = current
 [color]
 	ui = true
+[core]
+	trustctime = false
