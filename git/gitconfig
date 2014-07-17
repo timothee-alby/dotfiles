@@ -27,3 +27,4 @@
 	ui = true
 [core]
 	trustctime = false
+	excludesfile = /Users/tim/.gitignore
