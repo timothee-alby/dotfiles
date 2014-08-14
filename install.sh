@@ -30,6 +30,7 @@ declare -a confFiles=(
   todo-cli/
   vim/vimrc
   zsh/zshrc
+  oh-my-zsh/tim.zsh-theme
 )
 
 declare -a dests=(
@@ -38,6 +39,7 @@ declare -a dests=(
   ~/.todo.cfg
   ~/.vimrc
   ~/.zshrc
+  ~/.oh-my-zsh/themes/tim.zsh-theme
 )
 
 # Update mode. Will test symlinks and install missing one
