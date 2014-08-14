@@ -53,3 +53,7 @@ export KEYTIMEOUT=1
 bindkey "^R" history-incremental-search-backward
 bindkey "${terminfo[kcuu1]}" up-line-or-search
 bindkey "${terminfo[kcud1]}" down-line-or-search
+
+# Source custom env
+source $HOME/.env_custom
+
