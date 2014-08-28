@@ -19,6 +19,7 @@
 	sa = stash apply
 	ss = stash save
 	ap = add -p
+	u= branch -u 
 [credential]
 	helper = osxkeychain
 [push]
