@@ -29,3 +29,9 @@
 [core]
 	trustctime = false
 	excludesfile = /Users/tim/.gitignore
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge

@@ -27,7 +27,7 @@ CWD=$(pwd)
 declare -a confFiles=(
   git/gitconfig
   git/gitignore
-  todo-cli/
+  todo-cli/todo.cfg
   vim/vimrc
   zsh/zshrc
   oh-my-zsh/tim.zsh-theme

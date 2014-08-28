@@ -1,2 +1,5 @@
 # Text Pastry Package History
 sublime/TextPastryHistory.sublime-settings
+
+# This setting contains a Github api token
+sublime/GitHub.sublime-settings
