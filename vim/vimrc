@@ -6,38 +6,38 @@ endif
 " filetype off                   " required! -> but bug with git
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" call vundle#rc()
 
 " Vundle manage
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
 
 " Bundles
-Bundle 'tpope/vim-fugitive'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
-Bundle 'groenewege/vim-less'
-Bundle 'nono/vim-handlebars'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'elzr/vim-json'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'tpope/vim-sensible'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'vim-scripts/scratch.vim'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'majutsushi/tagbar'
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'mileszs/ack.vim'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'scrooloose/nerdcommenter'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'groenewege/vim-less'
+" Bundle 'nono/vim-handlebars'
+" Bundle 'othree/html5.vim'
+" Bundle 'tpope/vim-surround'
+" Bundle 'elzr/vim-json'
+" Bundle 'jiangmiao/auto-pairs'
+" Bundle 'tpope/vim-sensible'
+" Bundle 'nathanaelkane/vim-indent-guides'
+" Bundle 'plasticboy/vim-markdown'
+" Bundle 'vim-scripts/scratch.vim'
+" Bundle 'Shougo/neocomplcache.vim'
+" Bundle 'pangloss/vim-javascript'
+" Bundle 'kien/ctrlp.vim'
+" Bundle 'Lokaltog/vim-powerline'
+" Bundle 'terryma/vim-multiple-cursors'
+" Bundle 'majutsushi/tagbar'
 " Bundle 'marijnh/tern_for_vim'
-Bundle 'skwp/greplace.vim'
-Bundle 'gorodinskiy/vim-coloresque'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'bufkill.vim'
+" Bundle 'skwp/greplace.vim'
+" Bundle 'gorodinskiy/vim-coloresque'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'bufkill.vim'
 
 filetype plugin on
 filetype indent on
@@ -136,7 +136,7 @@ set autoread
 " Color Scheme
 set cursorline          " Higlight the current line
 " set rtp+=~/.vim/bundle/SunburstVIM/
-colorscheme hybrid
+" colorscheme hybrid
 
 " My Key bindings
   map <D-k> :NERDTreeToggle<CR>
