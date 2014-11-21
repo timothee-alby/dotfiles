@@ -65,6 +65,13 @@ if [ "$updateMode" = true ] ; then
     exit
 fi # End updateMode
 
+# add vim swap, backup and undo directories
+mkdir ~/.vim
+mkdir ~/.vim/tmp
+mkdir ~/.vim/tmp/backup
+mkdir ~/.vim/tmp/swap
+mkdir ~/.vim/tmp/undo
+
 # install oh-my-zsh
 if [ ! -r ~/.oh-my-zsh ]; then
   curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
