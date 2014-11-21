@@ -29,6 +29,7 @@
 [core]
 	trustctime = false
 	excludesfile = /Users/tim/.gitignore
+	editor = vim
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
