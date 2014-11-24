@@ -1,0 +1,5 @@
+{
+  // ignore warning for inline expression
+  // see: https://jslinterrors.com/expected-an-assignment-or-function-call
+  "-W030": false
+}

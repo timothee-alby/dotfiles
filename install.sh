@@ -31,6 +31,7 @@ declare -a confFiles=(
   vim/vimrc
   zsh/zshrc
   oh-my-zsh/tim.zsh-theme
+  jshint/jshintrc
 )
 
 declare -a dests=(
@@ -40,6 +41,7 @@ declare -a dests=(
   ~/.vimrc
   ~/.zshrc
   ~/.oh-my-zsh/themes/tim.zsh-theme
+  ~/.jshintrc
 )
 
 # Update mode. Will test symlinks and install missing one
