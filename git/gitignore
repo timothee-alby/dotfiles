@@ -1,11 +1,11 @@
 ##Netbeans##
 nbproject
 ##
- 
+
 #svn#
 .svn
- 
- 
+
+
 ###
 # ECLIPSE IDE project files
 ##
@@ -19,29 +19,29 @@ nbproject
 # Git merge files
 ###
 *.orig
- 
+
 ###
 # Texmate file
 ##
 *.tmproj
- 
+
 ###
 # Sublime Text
 ##
 *.sublime-project
 *.sublime-workspace
- 
+
 ###
 # Iphone stuff
 ###
 */build/*
- 
+
 ###
 # Mac OS X directory preferences
 ###
 .DS_Store
 .localized
-Icon 
+Icon
 
 ###
 # system SWAP, TMP and BACKUP files
@@ -49,7 +49,7 @@ Icon
 *~
 *.swp
 *.bak
- 
+
 ###
 # PhoneGap files
 ###
@@ -62,5 +62,9 @@ Icon
 ###
 # Dropbox
 ###
-*.dropbox 
+*.dropbox
+
 ###
+# NFS
+###
+*.nfs*
