@@ -9,7 +9,7 @@
 	up2 = push heroku_staging2 staging2:master
 	co = checkout
 	ci = commit
-  cim =  commit --amend
+  cam =  commit --amend
 	df = diff --staged
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
 	lsv = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat
@@ -21,7 +21,7 @@
 	ss = stash save
 	ap = add -p
 	u= branch -u
-	pei = pull --rebase
+	pe = pull --rebase
 [credential]
 	helper = osxkeychain
 [push]
