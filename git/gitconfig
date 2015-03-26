@@ -41,9 +41,12 @@
 	trustctime = false
 	excludesfile = /Users/tim/.gitignore
 	editor = vim
+	whitespace = trailing-space,space-before-tab
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [merge]
 	tool = diffmerge
+[rerere]
+	enabled = true
