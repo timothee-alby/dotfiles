@@ -44,6 +44,8 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 alias t='/usr/local/bin/todo.sh'
 alias subl-git='subl $(git status --short | awk '"'"'{print $2}'"'"')'
 alias mou="open -a Mou"
+alias firefox="open -a Firefox"
+alias ff="firefox"
 alias glc='git log -n 1 --pretty=format:"%H" | pbcopy'
 
 # Source custom env
