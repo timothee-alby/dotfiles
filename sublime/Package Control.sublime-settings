@@ -20,6 +20,7 @@
 		"sublime-github",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-ruby",
 		"Text Pastry",
