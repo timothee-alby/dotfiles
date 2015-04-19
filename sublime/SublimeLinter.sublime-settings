@@ -50,6 +50,16 @@
 				[
 				]
 			},
+			"rubocop":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"ruby":
 			{
 				"@disable": false,

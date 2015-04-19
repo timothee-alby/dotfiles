@@ -22,6 +22,7 @@
 		"SublimeLinter-annotations",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-jshint",
+		"SublimeLinter-rubocop",
 		"SublimeLinter-ruby",
 		"Text Pastry",
 		"Theme - Nil",
