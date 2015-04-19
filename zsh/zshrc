@@ -47,6 +47,7 @@ alias mou="open -a Mou"
 alias firefox="open -a Firefox"
 alias ff="firefox"
 alias glc='git log -n 1 --pretty=format:"%H" | pbcopy'
+alias fuck='$(thefuck $(fc -ln -1))'
 
 # Source custom env
 source $HOME/.env_custom
