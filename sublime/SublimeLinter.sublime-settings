@@ -30,6 +30,16 @@
 					"README"
 				]
 			},
+			"coffeelint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"eslint":
 			{
 				"@disable": true,
@@ -50,9 +60,19 @@
 				[
 				]
 			},
+			"jsxhint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"rubocop":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
