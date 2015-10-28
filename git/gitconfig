@@ -36,6 +36,10 @@
   com = checkout master
   cop = checkout -p
   rp = reset -p
+  bi = bisect
+  bg = bisect good
+  bb = bisect bad
+  superprune = remote prune origin
 [credential]
 	helper = osxkeychain
 [push]
