@@ -78,4 +78,11 @@
         }
     },
     { "keys": ["ctrl+i"], "command": "reindent" },
+
+    // Bookmarks
+    { "keys": ["super+b"], "command": "next_bookmark" },
+    { "keys": ["super+shift+b"], "command": "prev_bookmark" },
+    { "keys": ["alt+b"], "command": "toggle_bookmark" },
+    { "keys": ["super+alt+b"], "command": "clear_bookmarks" },
+
 ]
