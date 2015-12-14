@@ -46,6 +46,10 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'jnwhiteh/vim-golang'
 
+" Git
+" ---
+Plugin 'airblade/vim-gitgutter'
+
 call vundle#end()            " required
 
 filetype plugin on
@@ -188,6 +192,10 @@ autocmd BufNewFile,BufRead *.hb set ft=handlebars
 
 " Nerdcommenter
 let NERDSpaceDelims = 1
+
+" GitGutter
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk]
 
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
 if has("autocmd")
