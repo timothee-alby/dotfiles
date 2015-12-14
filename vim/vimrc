@@ -20,7 +20,6 @@ Plugin 'tpope/vim-vinegar'        " Ctrlp
 Plugin 'scrooloose/nerdcommenter' " the missing comment tool
 Plugin 'scrooloose/syntastic'     " Multi language checker
 Plugin 'tpope/vim-surround'       " Surrounder
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/scratch.vim'  " Block note into buffer
 Plugin 'Shougo/neocomplcache.vim' " Autocompletion
 Plugin 'sdanielf/vim-stdtabs'     " Standard indentation matching language
@@ -146,7 +145,7 @@ colorscheme hybrid
 
 if executable('ag')
   set grepprg=ag\ --search-files\ --smart-case\ --nogroup\ --nocolor
-  command -nargs=+ -complete=file -bar Ag silent! grep! <args>|botright cw|redraw!
+  command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|botright cw|redraw!
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l -f --nocolor -g ""'
 endif
