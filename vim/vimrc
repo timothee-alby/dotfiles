@@ -49,6 +49,7 @@ Plugin 'jnwhiteh/vim-golang'
 " Git
 " ---
 Plugin 'airblade/vim-gitgutter'
+Plugin 'solars/github-vim'
 
 call vundle#end()            " required
 
