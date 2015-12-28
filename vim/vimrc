@@ -171,6 +171,12 @@ nnoremap <Leader>f :Ag<space>
 "Shortcut for editing  vimrc file in a new tab
 nmap <leader>ec :tabedit $MYVIMRC<cr>
 
+imap <Leader>ip opp "p$a: #{p$a.inspect}"
+nmap <leader>ip yiwi<Leader>ip
+vmap <leader>ip yi<Leader>ip
+
+nmap <leader>% i<%= %>F=a
+
 "----------------------
 " Plugins configuration
 "----------------------
