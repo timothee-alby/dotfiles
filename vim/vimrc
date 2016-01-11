@@ -204,6 +204,10 @@ let NERDSpaceDelims = 1
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk]
 
+" Syntastic
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_ruby_rubocop_exec = '~/.rubocop-wl.sh'
+
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
 if has("autocmd")
  augroup myvimrchooks
