@@ -207,6 +207,9 @@ nmap [h <Plug>GitGutterPrevHunk]
 " Syntastic
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_ruby_rubocop_exec = '~/.rubocop-wl.sh'
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+cabbrev l SyntasticCheck
+cabbrev wl w <BAR> SyntasticCheck
 
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
 if has("autocmd")
