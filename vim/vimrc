@@ -175,6 +175,10 @@ imap <Leader>ip opp "p$a: #{p$a.inspect}"
 nmap <leader>ip yiwi<Leader>ip
 vmap <leader>ip yi<Leader>ip
 
+imap <Leader>cp oconsole.log("p$a", p$a)
+nmap <leader>cp yiwi<Leader>cp
+vmap <leader>cp yi<Leader>cp
+
 nmap <leader>% i<%= %>F=a
 
 "----------------------
