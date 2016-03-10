@@ -52,6 +52,8 @@ alias fuck='$(thefuck $(fc -ln -1))'
 alias settime="sudo ntpdate ntp.ubuntu.com"
 alias vssh='vagrant ssh'
 alias git-branch-delete='git branch  | grep -v "staging" | grep -v "master" | xargs -p -n 1 git branch -d'
+alias p='ping google.com'
+alias st='~/speedtest-cli'
 
 # Source custom env
 source $HOME/.env_custom
