@@ -9,6 +9,7 @@
   cob = checkout -b
 	ci = commit
   cam =  commit --amend
+  cim = commit -m
 	df = diff --staged
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
 	lsv = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat
@@ -40,6 +41,7 @@
   bg = bisect good
   bb = bisect bad
   superprune = remote prune origin
+  fp = fetch --prune
 [credential]
 	helper = osxkeychain
 [push]
