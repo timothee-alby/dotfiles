@@ -3,55 +3,50 @@ if &compatible          " only if not set before:
   set nocompatible      " use vim-defaults instead of vi-defaults (easier, more user friendly)
 endif
 
-" filetype off                   " required! -> but bug with git
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
-
-" Vundle manage
-Plugin 'gmarik/vundle'
+call plug#begin('~/.vim/plugged')
 
 " Main (mandatory) bundles
 " ------------------------
-Plugin 'tpope/vim-sensible'       " Init vimrc by tpope
-Plugin 'bling/vim-airline'        " Powerline with colors
-Plugin 'kien/ctrlp.vim'           " Ctrlp
-Plugin 'tpope/vim-vinegar'        " Ctrlp
-Plugin 'scrooloose/nerdcommenter' " the missing comment tool
-Plugin 'scrooloose/syntastic'     " Multi language checker
-Plugin 'tpope/vim-surround'       " Surrounder
-Plugin 'vim-scripts/scratch.vim'  " Block note into buffer
-Plugin 'Shougo/neocomplcache.vim' " Autocompletion
-Plugin 'sdanielf/vim-stdtabs'     " Standard indentation matching language
-Plugin 'tpope/vim-fugitive'       " Git for git blame..
-Plugin 'bufkill.vim'              " Kill buffer :bd
+Plug 'tpope/vim-sensible'       " Init vimrc by tpope
+Plug 'bling/vim-airline'        " Powerline with colors
+Plug 'kien/ctrlp.vim'           " Ctrlp
+Plug 'tpope/vim-vinegar'        " Ctrlp
+Plug 'scrooloose/nerdcommenter' " the missing comment tool
+Plug 'scrooloose/syntastic'     " Multi language checker
+Plug 'tpope/vim-surround'       " Surrounder
+Plug 'vim-scripts/scratch.vim'  " Block note into buffer
+Plug 'Shougo/neocomplcache.vim' " Autocompletion
+Plug 'sdanielf/vim-stdtabs'     " Standard indentation matching language
+Plug 'tpope/vim-fugitive'       " Git for git blame..
+Plug 'bufkill.vim'              " Kill buffer :bd
 
 " UI
 " --
-Plugin 'w0ng/vim-hybrid'
+Plug 'w0ng/vim-hybrid'
 
 " Nice to have but not required for you Jedi
 " ------------------------------------------
-Plugin 'majutsushi/tagbar'               " IDE like navigator into methods
-Plugin 'nathanaelkane/vim-indent-guides' " Indentation guide <leader>ig
-Plugin 'mattn/emmet-vim'                 " html tags
-Plugin 'tpope/vim-markdown'
+Plug 'majutsushi/tagbar'               " IDE like navigator into methods
+Plug 'nathanaelkane/vim-indent-guides' " Indentation guide <leader>ig
+Plug 'mattn/emmet-vim'                 " html tags
+Plug 'tpope/vim-markdown'
 
 " Specific to projects
 " --------------------
-Plugin 'nono/vim-handlebars'
-Plugin 'elzr/vim-json'
-Plugin 'heavenshell/vim-jsdoc'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'jnwhiteh/vim-golang'
+Plug 'nono/vim-handlebars'
+Plug 'elzr/vim-json'
+Plug 'heavenshell/vim-jsdoc'
+Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
+Plug 'jnwhiteh/vim-golang'
 
 " Git
 " ---
-Plugin 'airblade/vim-gitgutter'
-Plugin 'solars/github-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'solars/github-vim'
 
-call vundle#end()            " required
+" Add plugins to &runtimepath
+call plug#end()
 
 filetype plugin on
 filetype indent on
