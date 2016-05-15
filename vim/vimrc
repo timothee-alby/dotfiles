@@ -168,6 +168,9 @@ nnoremap <Leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <Leader>F :Ag <C-R><C-W><CR>
 nnoremap <Leader>f :Ag<space>
 
+nmap <Leader>ss :%s///g<left><left>
+vmap <Leader>ss :s///g<left><left>
+
 "Shortcut for editing  vimrc file in a new tab
 nmap <leader>ec :tabedit $MYVIMRC<cr>
 
@@ -181,6 +184,8 @@ vmap <leader>cp yi<Leader>cp
 
 nmap <leader>% i<%= %>F=a
 
+vmap <S-Up> <Up>
+vmap <S-Down> <Down>
 "----------------------
 " Plugins configuration
 "----------------------
