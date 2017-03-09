@@ -197,12 +197,6 @@ let g:airline#extensions#branch#enabled = 0
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
-" JavaScript
-autocmd Filetype javascript iabbr cl- console.log('');<ESC>F'i
-
-" handlebars templates
-autocmd BufNewFile,BufRead *.hb set ft=handlebars
-
 " Nerdcommenter
 let NERDSpaceDelims = 1
 
