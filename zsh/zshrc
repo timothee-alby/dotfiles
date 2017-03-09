@@ -54,6 +54,7 @@ alias vssh='vagrant ssh'
 alias git-branch-delete='git branch  | grep -v "staging" | grep -v "master" | xargs -p -n 1 git branch -d'
 alias p='ping google.com'
 alias st='~/speedtest-cli'
+alias overkill='nohup ruby ~/itunes-overkill/overkill.rb &'
 
 # Source custom env
 source $HOME/.env_custom
