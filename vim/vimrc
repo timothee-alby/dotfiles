@@ -19,6 +19,7 @@ Plug 'Shougo/neocomplcache.vim' " Autocompletion
 Plug 'sdanielf/vim-stdtabs'     " Standard indentation matching language
 Plug 'tpope/vim-fugitive'       " Git for git blame..
 Plug 'bufkill.vim'              " Kill buffer :bd
+Plug 'skwp/greplace.vim'        " Replace into multifiles
 
 " UI
 " --
@@ -148,6 +149,7 @@ if executable('ag')
   command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|botright cw|redraw!
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l -f --nocolor -g ""'
+  let g:grep_cmd_opts = '--line-numbers --noheading'
 endif
 
 " ==== Mappings ====================
