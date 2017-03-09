@@ -44,7 +44,6 @@ Plug 'jnwhiteh/vim-golang'
 " Git
 " ---
 Plug 'airblade/vim-gitgutter'
-Plug 'solars/github-vim'
 
 " Add plugins to &runtimepath
 call plug#end()
