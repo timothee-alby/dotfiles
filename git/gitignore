@@ -68,3 +68,10 @@ Icon
 # NFS
 ###
 *.nfs*
+
+###
+# AG
+###
+.hgignore
+
+.vimrc
