@@ -16,9 +16,7 @@ Plug 'scrooloose/syntastic'     " Multi language checker
 Plug 'tpope/vim-surround'       " Surrounder
 Plug 'vim-scripts/scratch.vim'  " Block note into buffer
 Plug 'Shougo/neocomplcache.vim' " Autocompletion
-Plug 'sdanielf/vim-stdtabs'     " Standard indentation matching language
 Plug 'tpope/vim-fugitive'       " Git for git blame..
-Plug 'bufkill.vim'              " Kill buffer :bd
 Plug 'skwp/greplace.vim'        " Replace into multifiles
 
 " UI
@@ -44,6 +42,10 @@ Plug 'jnwhiteh/vim-golang'
 " Git
 " ---
 Plug 'airblade/vim-gitgutter'
+
+" Ruby
+" ---
+Plug 'jgdavey/vim-blockle'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -98,12 +100,20 @@ set undolevels=10000           " number of forgivable mistakes
 set timeoutlen=3000
 set fileformat=unix            " file mode is unix
 set diffopt=filler,iwhite      " ignore all whitespace and sync
+set list                       " display whitespaces
+set listchars=tab:>-,space:·   " display spaces and tabs
 
 set encoding=utf-8
 set fileencoding=utf-8
 
 " Trim trailing whitespace when saving a document
-autocmd BufWritePre * :%s/\s\+$//e
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+autocmd BufWritePre * :call TrimWhitespace()
+command! TrimWhitespace call TrimWhitespace()
 
 "Better line wrapping
 set wrap
@@ -125,6 +135,7 @@ set history=50          " keep 50 lines of command history
 set mouse=a             " use mouse in all modes
 set mousehide           " Hide mouse when typing
 set splitright          " the new window is created on the right
+set exrc                " read .vimrc file from current directory
 
 " Backups
 set backupdir=~/.vim/tmp/backup// " backups
