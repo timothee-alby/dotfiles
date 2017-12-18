@@ -231,3 +231,6 @@ endif
 
 set clipboard=unnamed
 
+" Turn off linewise keys.
+nmap j gj
+nmap k gk
