@@ -114,4 +114,6 @@ touch ~/.env_custom
 chsh -s $(which zsh)
 echo -e "\xF0\x9F\x8D\xBA Installation: Done!"
 echo "Sublime settings not installed -- use Package Syncing"
-echo "BetterTouchTool preferences no imported"
+echo "BetterTouchTool preferences not imported"
+echo "Iterm preferences not imported"
+echo "QuitFrontApp Script not installed"
