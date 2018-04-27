@@ -47,6 +47,8 @@ Plug 'airblade/vim-gitgutter'
 " ---
 Plug 'jgdavey/vim-blockle'
 
+Plug 'vim-scripts/dbext.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
 
