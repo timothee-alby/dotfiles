@@ -1,0 +1,224 @@
+{
+  "BTTPresetName" : "bettertouchtool",
+  "BTTPresetUUID" : "A0A515DD-CB4A-430F-B380-2D8E4269C199",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "org.mozilla.firefox",
+      "BTTAppName" : "Firefox",
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Firefox",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,123",
+          "BTTAdditionalConfiguration" : "1048576",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 51,
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 0,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTPredefinedActionType" : -1,
+              "BTTPredefinedActionName" : "No Action",
+              "BTTShortcutToSend" : "51",
+              "BTTEnabled" : 1,
+              "BTTShortcutKeyCode" : -1,
+              "BTTShortcutModifierKeys" : -1,
+              "BTTOrder" : 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTTriggerType" : 163,
+          "BTTTriggerTypeDescription" : "3 Finger Double-Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 47,
+          "BTTPredefinedActionName" : "Move Window to Next Monitor",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 7
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 195,
+          "BTTPredefinedActionName" : "Run Apple Script in background (enter directly as text)",
+          "BTTInlineAppleScript" : "tell application \"System Events\"\r\tset frontApp to name of first application process whose frontmost is true\r\tdisplay dialog \"Quit?\"\rend tell\rtell application frontApp to quit",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 12,
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "53",
+          "BTTAdditionalConfiguration" : "262144",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 10,
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "53",
+          "BTTAdditionalConfiguration" : "0",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 10,
+          "BTTShortcutModifierKeys" : 0,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "53",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 10,
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : 111,
+          "BTTTriggerTypeDescription" : "5 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 21,
+          "BTTPredefinedActionName" : "Maximize Window",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 4
+        },
+        {
+          "BTTTriggerType" : 133,
+          "BTTTriggerTypeDescription" : "TipTap Right (2 Fingers Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "59,48",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerType" : 132,
+          "BTTTriggerTypeDescription" : "TipTap Left (2 Fingers Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "59,56,48",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 2
+        },
+        {
+          "BTTTriggerType" : 114,
+          "BTTTriggerTypeDescription" : "TipTap Right (1 Finger Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 2,
+          "BTTPredefinedActionName" : "CMD(⌘)+Click",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0
+        },
+        {
+          "BTTTriggerType" : 138,
+          "BTTTriggerTypeDescription" : "TipTap Middle (2 Fingers Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "55,13",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1
+        },
+        {
+          "BTTTriggerType" : 142,
+          "BTTTriggerTypeDescription" : "TipSwipe Left Finger Down (2 Fingers Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 47,
+          "BTTPredefinedActionName" : "Move Window to Next Monitor",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 6
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "53",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 10,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 3
+        },
+        {
+          "BTTTriggerType" : 143,
+          "BTTTriggerTypeDescription" : "TipSwipe Left Finger Up (2 Fingers Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTPredefinedActionType" : 47,
+          "BTTPredefinedActionName" : "Move Window to Next Monitor",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 5
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "56,55,124",
+          "BTTAdditionalConfiguration" : "1179658",
+          "BTTTriggerOnDown" : 1,
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 51,
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 5,
+          "BTTAdditionalActions" : [
+            {
+              "BTTTriggerType" : -1,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTPredefinedActionType" : -1,
+              "BTTPredefinedActionName" : "No Action",
+              "BTTShortcutToSend" : "51",
+              "BTTEnabled" : 1,
+              "BTTShortcutKeyCode" : -1,
+              "BTTShortcutModifierKeys" : -1,
+              "BTTOrder" : 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}
