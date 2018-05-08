@@ -237,3 +237,7 @@ set clipboard=unnamed
 " Turn off linewise keys.
 nmap j gj
 nmap k gk
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+vnoremap <Tab> >
+vnoremap <S-Tab> <
