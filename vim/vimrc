@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'       " Surrounder
 Plug 'vim-scripts/scratch.vim'  " Block note into buffer
 Plug 'Shougo/neocomplcache.vim' " Autocompletion
 Plug 'tpope/vim-fugitive'       " Git for git blame..
+Plug 'tpope/vim-rhubarb'        " Github integration
 Plug 'skwp/greplace.vim'        " Replace into multifiles
 
 " UI
