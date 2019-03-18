@@ -12,7 +12,7 @@ Plug 'bling/vim-airline'        " Powerline with colors
 Plug 'kien/ctrlp.vim'           " Ctrlp
 Plug 'tpope/vim-vinegar'        " Ctrlp
 Plug 'scrooloose/nerdcommenter' " the missing comment tool
-Plug 'scrooloose/syntastic'     " Multi language checker
+Plug 'w0rp/ale'                 " Asynchronous Lint Engine
 Plug 'tpope/vim-surround'       " Surrounder
 Plug 'vim-scripts/scratch.vim'  " Block note into buffer
 Plug 'Shougo/neocomplcache.vim' " Autocompletion
@@ -207,7 +207,7 @@ vmap <S-Down> <Down>
 let g:airline_theme = 'dark'
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
-let g:airline#extensions#syntastic#enabled = 0
+let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#branch#enabled = 0
 
 " Neocomplete
@@ -221,11 +221,13 @@ let NERDSpaceDelims = 1
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk]
 
-" Syntastic
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_coffee_checkers = ['coffeelint']
-let g:syntastic_coffee_coffeelint_args = '-f .coffeelintrc'
-cabbrev l SyntasticCheck
+" ALE
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\ 'ruby': ['rubocop']
+\}
+let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_fix_on_save = 1
 
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
 if has("autocmd")
