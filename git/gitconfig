@@ -42,6 +42,7 @@
   bb = bisect bad
   superprune = remote prune origin
   fp = fetch --prune
+	rim = rebase -i master
 [credential]
 	helper = osxkeychain
 [push]
