@@ -33,6 +33,7 @@ declare -a confFiles=(
   oh-my-zsh/tim.zsh-theme
   jshint/jshintrc
   psql/psqlrc
+  theme
 )
 
 declare -a dests=(
@@ -44,6 +45,7 @@ declare -a dests=(
   ~/.oh-my-zsh/themes/tim.zsh-theme
   ~/.jshintrc
   ~/.psqlrc
+  ~/.theme
 )
 
 # Update mode. Will test symlinks and install missing one

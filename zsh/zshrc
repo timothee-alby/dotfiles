@@ -59,3 +59,4 @@ alias overkill='ruby ~/itunes-overkill/overkill.rb > /dev/null &'
 # Source custom env
 source $HOME/.env_custom
 
+eval "$($HOME/.theme/init.sh)"
