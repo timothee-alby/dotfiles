@@ -11,7 +11,7 @@ PROMPT_END='%(!.#.$) '
 PROMPT="$PROMPT_USER:$PROMPT_DIR|$PROMPT_GIT$PROMPT_END"
 
 # Rprompt: Display time on on the far right
-RPROMPT="%{$FG[058]%}[%*]$RESET_COLOR"
+# RPROMPT="%{$FG[058]%}[%*]$RESET_COLOR"
 
 # Git theme
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[068]%}("
