@@ -31,6 +31,7 @@ Plug 'majutsushi/tagbar'               " IDE like navigator into methods
 Plug 'nathanaelkane/vim-indent-guides' " Indentation guide <leader>ig
 Plug 'mattn/emmet-vim'                 " html tags
 Plug 'tpope/vim-markdown'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Specific to projects
 " --------------------
