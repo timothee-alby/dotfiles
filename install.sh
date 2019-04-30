@@ -30,6 +30,7 @@ declare -a confFiles=(
   todo-cli/todo.cfg
   vim/vimrc
   zsh/zshrc
+  zsh/zsh_functions/*
   oh-my-zsh/tim.zsh-theme
   jshint/jshintrc
   psql/psqlrc
@@ -42,6 +43,7 @@ declare -a dests=(
   ~/.todo.cfg
   ~/.vimrc
   ~/.zshrc
+  ~/.zsh_functions
   ~/.oh-my-zsh/themes/tim.zsh-theme
   ~/.jshintrc
   ~/.psqlrc
@@ -77,6 +79,9 @@ mkdir ~/.vim/tmp
 mkdir ~/.vim/tmp/backup
 mkdir ~/.vim/tmp/swap
 mkdir ~/.vim/tmp/undo
+
+# add ZSH functions directory
+mkdir ~/.zsh_functions
 
 # install oh-my-zsh
 if [ ! -r ~/.oh-my-zsh ]; then

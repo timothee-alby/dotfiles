@@ -29,6 +29,10 @@ plugins=(git osx rake brew rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
+# load custom functions
+fpath=(~/.zsh_functions $fpath)
+autoload git_branch_delete
+
 # User configuration
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin"
@@ -51,7 +55,6 @@ alias glc='git log -n 1 --pretty=format:"%H" | pbcopy'
 alias fuck='$(thefuck $(fc -ln -1))'
 alias settime="sudo ntpdate ntp.ubuntu.com"
 alias vssh='vagrant ssh'
-alias git-branch-delete='git branch  | grep -v "staging" | grep -v "master" | xargs -p -n 1 git branch -d'
 alias p='ping google.com'
 alias st='~/speedtest-cli'
 alias overkill='ruby ~/itunes-overkill/overkill.rb > /dev/null &'

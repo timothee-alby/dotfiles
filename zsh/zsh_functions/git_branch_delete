@@ -1,0 +1,51 @@
+#!/bin/sh
+
+setopt BASH_REMATCH
+git fetch -p
+
+git branch -vv | while read line; do
+  if [[ $line =~ '^(\* )?([^ ]+) +[^ ]+ (\[.+\])?.*' ]]
+  then
+    branch="${BASH_REMATCH[3]}"
+    origin="${BASH_REMATCH[4]}"
+  else
+    echo "! Couldn't read line: $line"
+    continue
+  fi
+
+  # skip master branch
+  if [ $branch = 'master' ]
+  then
+    continue
+  fi
+
+  if [[ $origin =~ '\: gone\]$'  ]]
+  then
+    # soft-delete gone branches
+    reason='gone'
+    if [[ `git branch -d ${branch}` ]]
+    then
+      echo "Deleted branch $branch (gone)."
+      continue
+    fi
+  elif [[ $origin != '' ]]
+  then
+    # skip remote-tracked branches
+    continue
+  else
+    reason='local'
+  fi
+
+
+  # prompt for confirmation before force-deleting unmerged and local branches
+  read -q "REPLY?Force-delete branch $branch ($reason) [y/n]? " < /dev/tty
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    git branch -D $branch
+  fi
+done
+
+echo
+echo "Done deleting. Branches left:"
+git branch
