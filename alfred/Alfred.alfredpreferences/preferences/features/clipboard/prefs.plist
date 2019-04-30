@@ -4,8 +4,6 @@
 <dict>
 	<key>clearKeywordEnabled</key>
 	<false/>
-	<key>fastAppend</key>
-	<true/>
 	<key>fastAppendBackToClipboard</key>
 	<true/>
 	<key>fastAppendPlaySound</key>

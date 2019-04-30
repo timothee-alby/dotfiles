@@ -17,6 +17,58 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>3CA1CFDA-E2F3-4DDB-9108-243C998C54A8</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>node</string>
+			<key>text</key>
+			<string>Search NodeJS for '{query}'</string>
+			<key>url</key>
+			<string>https://duckduckgo.com/?q=node+{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>54D74956-FD86-4ACA-BFD7-348E6007C797</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>mongo</string>
+			<key>text</key>
+			<string>Search MongoDB for '{query}'</string>
+			<key>url</key>
+			<string>https://duckduckgo.com/?q=mongodb+{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>5AC77D03-997B-4009-9C38-76CAC0604427</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>es</string>
+			<key>text</key>
+			<string>Search ES6 for '{query}'</string>
+			<key>url</key>
+			<string>https://duckduckgo.com/?q=es6+{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>B7411709-A70B-48EB-A5DE-7E9F668D9362</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>pg</string>
+			<key>text</key>
+			<string>Search Postgres for '{query}'</string>
+			<key>url</key>
+			<string>https://duckduckgo.com/?q=postgresql+{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
