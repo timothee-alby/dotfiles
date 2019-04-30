@@ -64,3 +64,5 @@
 	enabled = true
 [log]
 	date = auto:human
+[pager]
+	branch = false
