@@ -25,12 +25,16 @@ Plug 'skwp/greplace.vim'        " Replace into multifiles
 Plug 'w0ng/vim-hybrid'
 Plug 'chriskempson/base16-vim'
 
-" Nice to have but not required for you Jedi
+" Tags management
 " ------------------------------------------
 Plug 'majutsushi/tagbar'               " IDE like navigator into methods
+
+" Nice to have but not required for you Jedi
+" ------------------------------------------
 Plug 'nathanaelkane/vim-indent-guides' " Indentation guide <leader>ig
 Plug 'mattn/emmet-vim'                 " html tags
 Plug 'tpope/vim-markdown'
+Plug 'dbeniamine/cheat.sh-vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Specific to projects
