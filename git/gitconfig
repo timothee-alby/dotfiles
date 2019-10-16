@@ -43,6 +43,11 @@
   superprune = remote prune origin
   fp = fetch --prune
 	rim = rebase -i master
+  sw = switch
+  swm = switch master
+  swc = switch --create
+  re = restore
+  rep = restore --patch
 [credential]
 	helper = osxkeychain
 [push]
