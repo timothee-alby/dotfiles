@@ -75,4 +75,12 @@ Icon
 .hgignore
 .ignore
 
+###
+# Prettier
+###
+.prettierignore
+
+###
+# Vim
+###
 .vimrc
