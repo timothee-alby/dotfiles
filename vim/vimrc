@@ -174,6 +174,13 @@ if executable('ag')
   let g:grep_cmd_opts = '--line-numbers --noheading'
 endif
 
+" Tagbar
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 1
+let g:tagbar_compact = 1
+let g:tagbar_left = 1
+
 " ==== Mappings ====================
 " To see all leader mappings currently in use:
 " grep -R leader .vimrc .vim/bundle | perl -pe 's/.+(<leader>\w+).+/\1/' | sort | uniq
@@ -182,10 +189,13 @@ endif
 noremap Q <Nop>
 
 nnoremap <Leader>p :CtrlPMRUFiles<CR>
-nnoremap <Leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+nnoremap <Leader>P :CtrlPClearCache<CR>:CtrlP<CR>
 " grep word under cursor
 nnoremap <Leader>F :Ag <C-R><C-W><CR>
 nnoremap <Leader>f :Ag<space>
+
+" work with tags
+nnoremap <Leader>t :TagbarToggle<CR>
 
 nmap <Leader>ss :%s///g<left><left>
 vmap <Leader>ss :s///g<left><left>
