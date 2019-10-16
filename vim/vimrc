@@ -186,6 +186,11 @@ nnoremap <Leader>f :Ag<space>
 nmap <Leader>ss :%s///g<left><left>
 vmap <Leader>ss :s///g<left><left>
 
+" Capitalize Selection
+" see https://taptoe.wordpress.com/2013/02/06/vim-capitalize-every-first-character-of-every-word-in-a-sentence/
+vmap <Leader>cap :s/^\a\\|\<\(in\>\\|the\>\\|at\>\\|with\>\\|a\>\\|and\>\\|for\>\\|of\>\\|on\>\\|from\>\\|by\>\)\@\!\a/\u&/g<CR><CR>:noh<CR><CR>
+nmap <Leader>cap <S-V><Leader>cap
+
 "Shortcut for editing  vimrc file in a new tab
 nmap <leader>ec :tabedit $MYVIMRC<cr>
 
