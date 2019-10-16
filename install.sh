@@ -35,6 +35,7 @@ declare -a confFiles=(
   jshint/jshintrc
   psql/psqlrc
   theme
+  ctags.d/*
 )
 
 declare -a dests=(
@@ -48,6 +49,7 @@ declare -a dests=(
   ~/.jshintrc
   ~/.psqlrc
   ~/.theme
+  ~/.ctags.d
 )
 
 # Update mode. Will test symlinks and install missing one
@@ -82,6 +84,9 @@ mkdir ~/.vim/tmp/undo
 
 # add ZSH functions directory
 mkdir ~/.zsh_functions
+
+# add ctags.d directory
+mkdir ~/.ctags.d
 
 # install oh-my-zsh
 if [ ! -r ~/.oh-my-zsh ]; then

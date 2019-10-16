@@ -84,3 +84,8 @@ Icon
 # Vim
 ###
 .vimrc
+
+###
+# Ctags
+###
+tags

@@ -59,6 +59,7 @@ alias p='ping google.com'
 alias st='~/speedtest-cli'
 alias overkill='ruby ~/itunes-overkill/overkill.rb > /dev/null &'
 alias kube=kubectl
+alias ctagr='ctags -R .'
 
 # Source custom env
 source $HOME/.env_custom
