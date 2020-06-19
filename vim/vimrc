@@ -46,9 +46,11 @@ Plug 'nono/vim-handlebars'
 Plug 'elzr/vim-json'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'kchmck/vim-coffee-script'
 Plug 'jnwhiteh/vim-golang'
 Plug 'digitaltoad/vim-pug'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Git
 " ---
