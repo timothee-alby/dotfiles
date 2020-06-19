@@ -103,6 +103,10 @@ set fileencoding=utf-8
 
 " Trim trailing whitespace when saving a document
 fun! TrimWhitespace()
+  if &ft =~ 'pug'
+    " Don't strip pug files
+    return
+  endif
   let l:save = winsaveview()
   %s/\s\+$//e
   call winrestview(l:save)
