@@ -27,7 +27,6 @@ Plug 'chriskempson/base16-vim'
 
 " Tags management
 " ------------------------------------------
-Plug 'majutsushi/tagbar'               " IDE like navigator into methods
 
 " Nice to have but not required for you Jedi
 " ------------------------------------------
