@@ -15,7 +15,7 @@ Plug 'scrooloose/nerdcommenter' " the missing comment tool
 Plug 'w0rp/ale'                 " Asynchronous Lint Engine
 Plug 'tpope/vim-surround'       " Surrounder
 Plug 'vim-scripts/scratch.vim'  " Block note into buffer
-Plug 'Shougo/neocomplcache.vim' " Autocompletion
+" Plug 'Shougo/neocomplcache.vim' " Autocompletion
 Plug 'tpope/vim-fugitive'       " Git for git blame..
 Plug 'tpope/vim-rhubarb'        " Github integration
 Plug 'skwp/greplace.vim'        " Replace into multifiles
@@ -25,8 +25,12 @@ Plug 'skwp/greplace.vim'        " Replace into multifiles
 Plug 'w0ng/vim-hybrid'
 Plug 'chriskempson/base16-vim'
 
-" Tags management
+" Coc
 " ------------------------------------------
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-solargraph', {'do': 'yarn install --frozen-lockfile'}
 
 " Nice to have but not required for you Jedi
 " ------------------------------------------
@@ -170,6 +174,9 @@ if &t_Co > 2 || has("gui_running")
 endif
 set cursorline          " Higlight the current line
 highlight SpecialKey ctermfg=0
+highlight Search ctermbg=Brown ctermfg=LightGrey
+highlight SpellBad ctermfg=LightGrey
+highlight SpellCap ctermbg=0 ctermfg=LightGrey
 
 if executable('ag')
   set grepprg=ag\ --search-files\ --smart-case\ --nogroup\ --nocolor
@@ -238,7 +245,7 @@ let g:airline#extensions#branch#enabled = 0
 
 " Neocomplete
 let g:neocomplcache_enable_at_startup = 1
-inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 " Nerdcommenter
 let NERDSpaceDelims = 1
@@ -258,6 +265,9 @@ let g:ale_fixers = {
 \  'ruby': ['rubocop']
 \}
 let g:ale_fix_on_save = 1
+
+" CoC
+source ~/.vim/coc.vim
 
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
 if has("autocmd")

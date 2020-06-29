@@ -35,6 +35,8 @@ declare -a confFiles=(
   jshint/jshintrc
   psql/psqlrc
   theme
+  vim/coc.vim
+  vim/coc-settings.json
 )
 
 declare -a dests=(
@@ -48,6 +50,8 @@ declare -a dests=(
   ~/.jshintrc
   ~/.psqlrc
   ~/.theme
+  ~/.vim/coc.vim
+  ~/.vim/coc-settings.json
 )
 
 # Update mode. Will test symlinks and install missing one
