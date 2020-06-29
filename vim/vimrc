@@ -252,7 +252,11 @@ let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \ 'ruby': ['rubocop']
 \}
-let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_fixers = {
+\  'javascript': ['prettier'],
+\  'javascriptreact': ['prettier'],
+\  'ruby': ['rubocop']
+\}
 let g:ale_fix_on_save = 1
 
 " Source the vimrc file after saving it. This way, you don't have to reload Vim to see the changes.
