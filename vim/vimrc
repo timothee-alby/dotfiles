@@ -244,8 +244,8 @@ inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 let NERDSpaceDelims = 1
 
 " GitGutter
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk]
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 " ALE
 let g:ale_linters = {
